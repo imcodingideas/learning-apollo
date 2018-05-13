@@ -1,5 +1,5 @@
 import { createApolloServer } from "meteor/apollo";
-import { makeExecutableSchema } from 'graphql-tools';
+import { makeExecutableSchema } from "graphql-tools";
 
 const typeDefs = `
   type Query {
@@ -20,4 +20,4 @@ const schema = makeExecutableSchema({
   resolvers
 })
 
-createApolloServer({schema});
+createApolloServer({ schema });
